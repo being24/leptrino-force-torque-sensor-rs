@@ -301,6 +301,11 @@ impl LeptrinoSensor {
 
         value
     }
+
+    /// return the rated wrench
+    pub fn rated_wrench(&self) -> Wrench {
+        self.rated_wrench
+    }
 }
 
 /// Parses the specified command, then sends it.
